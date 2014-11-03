@@ -1,0 +1,7 @@
+E:\Trade\WPE\WPE\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+E:\Trade\WPE\WPE\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
+E:\Trade\WPE\WPE\WindowsFormsApplication1\obj\Debug\ResolveAssemblyReference.cache
+E:\Trade\WPE\WPE\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
+E:\Trade\WPE\WPE\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.GenerateResource.Cache
+E:\Trade\WPE\WPE\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
+E:\Trade\WPE\WPE\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb

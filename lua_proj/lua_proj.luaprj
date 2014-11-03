@@ -1,0 +1,984 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<Project Name="lua_proj.luaprj" >
+    <Filter Name="script" >
+        <Filter Name="script" >
+            <LuaFile RelativePath=".\script\script\GlobalVars.lua" />
+            <LuaFile RelativePath=".\script\script\Legacy.lua" />
+            <LuaFile RelativePath=".\script\script\Logger.lua" />
+            <LuaFile RelativePath=".\script\script\main.lua" />
+            <LuaFile RelativePath=".\script\script\Platform.lua" />
+            <LuaFile RelativePath=".\script\script\Util.lua" />
+            <Filter Name="audio" >
+                <LuaFile RelativePath=".\script\script\audio\AudioUtil.lua" />
+            </Filter>
+            <Filter Name="battle" >
+                <LuaFile RelativePath=".\script\script\battle\BattleCardUtil.lua" />
+                <LuaFile RelativePath=".\script\script\battle\BattleLayer.lua" />
+                <LuaFile RelativePath=".\script\script\battle\BattleReportLayer.lua" />
+                <LuaFile RelativePath=".\script\script\battle\BattleTest.lua" />
+                <LuaFile RelativePath=".\script\script\battle\BattleUtil.lua" />
+                <LuaFile RelativePath=".\script\script\battle\ChatBattleReportLayer.lua" />
+                <LuaFile RelativePath=".\script\script\battle\GuildBattle.lua" />
+                <LuaFile RelativePath=".\script\script\battle\PlayerCardLayer.lua" />
+                <LuaFile RelativePath=".\script\script\battle\PlayerMoneyTreeLayer.lua" />
+            </Filter>
+            <Filter Name="config" >
+                <LuaFile RelativePath=".\script\script\config\config_360.lua" />
+                <LuaFile RelativePath=".\script\script\config\config_37wan.lua" />
+                <LuaFile RelativePath=".\script\script\config\config_91.lua" />
+                <LuaFile RelativePath=".\script\script\config\config_91Android.lua" />
+                <LuaFile RelativePath=".\script\script\config\config_Android_3g.lua" />
+                <LuaFile RelativePath=".\script\script\config\config_Android_4399.lua" />
+                <LuaFile RelativePath=".\script\script\config\config_Android_8868.lua" />
+                <LuaFile RelativePath=".\script\script\config\config_Android_amazon.lua" />
+                <LuaFile RelativePath=".\script\script\config\config_Android_baidupay.lua" />
+                <LuaFile RelativePath=".\script\script\config\config_Android_baoruan.lua" />
+                <LuaFile RelativePath=".\script\script\config\config_Android_c1wan.lua" />
+                <LuaFile RelativePath=".\script\script\config\config_Android_chaohaowan.lua" />
+                <LuaFile RelativePath=".\script\script\config\config_Android_ck.lua" />
+                <LuaFile RelativePath=".\script\script\config\config_Android_ck_dianxin.lua" />
+                <LuaFile RelativePath=".\script\script\config\config_Android_ck_liantong.lua" />
+                <LuaFile RelativePath=".\script\script\config\config_Android_ck_yidongGame.lua" />
+                <LuaFile RelativePath=".\script\script\config\config_Android_ck_yidongMM.lua" />
+                <LuaFile RelativePath=".\script\script\config\config_Android_cw.lua" />
+                <LuaFile RelativePath=".\script\script\config\config_Android_dny.lua" />
+                <LuaFile RelativePath=".\script\script\config\config_Android_e7wan.lua" />
+                <LuaFile RelativePath=".\script\script\config\config_Android_feiliu.lua" />
+                <LuaFile RelativePath=".\script\script\config\config_Android_gamesky.lua" />
+                <LuaFile RelativePath=".\script\script\config\config_Android_gtv.lua" />
+                <LuaFile RelativePath=".\script\script\config\config_Android_huaqing.lua" />
+                <LuaFile RelativePath=".\script\script\config\config_Android_huaqing2.lua" />
+                <LuaFile RelativePath=".\script\script\config\config_Android_huawei.lua" />
+                <LuaFile RelativePath=".\script\script\config\config_Android_jianguo.lua" />
+                <LuaFile RelativePath=".\script\script\config\config_Android_jinli.lua" />
+                <LuaFile RelativePath=".\script\script\config\config_Android_jinshan.lua" />
+                <LuaFile RelativePath=".\script\script\config\config_Android_joloplay.lua" />
+                <LuaFile RelativePath=".\script\script\config\config_Android_km.lua" />
+                <LuaFile RelativePath=".\script\script\config\config_Android_kuwo.lua" />
+                <LuaFile RelativePath=".\script\script\config\config_Android_ledou.lua" />
+                <LuaFile RelativePath=".\script\script\config\config_Android_lenovo.lua" />
+                <LuaFile RelativePath=".\script\script\config\config_Android_lenovoPush.lua" />
+                <LuaFile RelativePath=".\script\script\config\config_Android_lvan.lua" />
+                <LuaFile RelativePath=".\script\script\config\config_Android_mengcheng.lua" />
+                <LuaFile RelativePath=".\script\script\config\config_Android_mumayi.lua" />
+                <LuaFile RelativePath=".\script\script\config\config_Android_muzhiwan.lua" />
+                <LuaFile RelativePath=".\script\script\config\config_Android_oppo.lua" />
+                <LuaFile RelativePath=".\script\script\config\config_Android_pipa.lua" />
+                <LuaFile RelativePath=".\script\script\config\config_Android_pps.lua" />
+                <LuaFile RelativePath=".\script\script\config\config_Android_pptv.lua" />
+                <LuaFile RelativePath=".\script\script\config\config_Android_renren.lua" />
+                <LuaFile RelativePath=".\script\script\config\config_Android_samsung.lua" />
+                <LuaFile RelativePath=".\script\script\config\config_Android_shoumeng.lua" />
+                <LuaFile RelativePath=".\script\script\config\config_Android_shouyouba.lua" />
+                <LuaFile RelativePath=".\script\script\config\config_Android_sina.lua" />
+                <LuaFile RelativePath=".\script\script\config\config_Android_sjyou.lua" />
+                <LuaFile RelativePath=".\script\script\config\config_Android_sogou.lua" />
+                <LuaFile RelativePath=".\script\script\config\config_Android_taobao.lua" />
+                <LuaFile RelativePath=".\script\script\config\config_Android_vivo.lua" />
+                <LuaFile RelativePath=".\script\script\config\config_Android_wanpu.lua" />
+                <LuaFile RelativePath=".\script\script\config\config_Android_xl.lua" />
+                <LuaFile RelativePath=".\script\script\config\config_Android_youmi.lua" />
+                <LuaFile RelativePath=".\script\script\config\config_Android_youxin.lua" />
+                <LuaFile RelativePath=".\script\script\config\config_Android_youyou.lua" />
+                <LuaFile RelativePath=".\script\script\config\config_Android_yxsky.lua" />
+                <LuaFile RelativePath=".\script\script\config\config_Android_yygame.lua" />
+                <LuaFile RelativePath=".\script\script\config\config_Android_yyh.lua" />
+                <LuaFile RelativePath=".\script\script\config\config_Android_zhangyue.lua" />
+                <LuaFile RelativePath=".\script\script\config\config_Android_zyx.lua" />
+                <LuaFile RelativePath=".\script\script\config\config_anzhi.lua" />
+                <LuaFile RelativePath=".\script\script\config\config_apple.lua" />
+                <LuaFile RelativePath=".\script\script\config\config_baidu.lua" />
+                <LuaFile RelativePath=".\script\script\config\config_baofeng.lua" />
+                <LuaFile RelativePath=".\script\script\config\config_dangle.lua" />
+                <LuaFile RelativePath=".\script\script\config\config_debug.lua" />
+                <LuaFile RelativePath=".\script\script\config\config_duoku.lua" />
+                <LuaFile RelativePath=".\script\script\config\config_ios_aszs.lua" />
+                <LuaFile RelativePath=".\script\script\config\config_ios_dangle.lua" />
+                <LuaFile RelativePath=".\script\script\config\config_IOS_haima.lua" />
+                <LuaFile RelativePath=".\script\script\config\config_ios_kimi.lua" />
+                <LuaFile RelativePath=".\script\script\config\config_ios_kldny.lua" />
+                <LuaFile RelativePath=".\script\script\config\config_ios_pps.lua" />
+                <LuaFile RelativePath=".\script\script\config\config_IOS_WF.lua" />
+                <LuaFile RelativePath=".\script\script\config\config_ios_xyzs.lua" />
+                <LuaFile RelativePath=".\script\script\config\config_ios_zuiyouxi.lua" />
+                <LuaFile RelativePath=".\script\script\config\config_IOS_zyx.lua" />
+                <LuaFile RelativePath=".\script\script\config\config_itools.lua" />
+                <LuaFile RelativePath=".\script\script\config\config_jifeng.lua" />
+                <LuaFile RelativePath=".\script\script\config\config_kuaiyong.lua" />
+                <LuaFile RelativePath=".\script\script\config\config_kugou.lua" />
+                <LuaFile RelativePath=".\script\script\config\config_PGY.lua" />
+                <LuaFile RelativePath=".\script\script\config\config_PP.lua" />
+                <LuaFile RelativePath=".\script\script\config\config_PP2.lua" />
+                <LuaFile RelativePath=".\script\script\config\config_TBT.lua" />
+                <LuaFile RelativePath=".\script\script\config\config_uc.lua" />
+                <LuaFile RelativePath=".\script\script\config\config_wandoujia.lua" />
+                <LuaFile RelativePath=".\script\script\config\config_wp8_zyx.lua" />
+                <LuaFile RelativePath=".\script\script\config\config_xiaomi.lua" />
+            </Filter>
+            <Filter Name="consoleExe" >
+                <LuaFile RelativePath=".\script\script\consoleExe\ConsoleBtn.lua" />
+                <LuaFile RelativePath=".\script\script\consoleExe\ConsoleLayer.lua" />
+            </Filter>
+            <Filter Name="guide" >
+                <LuaFile RelativePath=".\script\script\guide\ArenaGuide.lua" />
+                <LuaFile RelativePath=".\script\script\guide\AstrologyGuide.lua" />
+                <LuaFile RelativePath=".\script\script\guide\ChangeSkillGuide.lua" />
+                <LuaFile RelativePath=".\script\script\guide\CopyBoxGuide.lua" />
+                <LuaFile RelativePath=".\script\script\guide\DestinyGuide.lua" />
+                <LuaFile RelativePath=".\script\script\guide\EliteCopyGuide.lua" />
+                <LuaFile RelativePath=".\script\script\guide\EquipGuide.lua" />
+                <LuaFile RelativePath=".\script\script\guide\FormationGuide.lua" />
+                <LuaFile RelativePath=".\script\script\guide\ForthFormationGuide.lua" />
+                <LuaFile RelativePath=".\script\script\guide\GeneralUpgradeGuide.lua" />
+                <LuaFile RelativePath=".\script\script\guide\HeroDevelopGuide.lua" />
+                <LuaFile RelativePath=".\script\script\guide\LevelGiftBagGuide.lua" />
+                <LuaFile RelativePath=".\script\script\guide\LieZhuanGuide.lua" />
+                <LuaFile RelativePath=".\script\script\guide\MatchGuide.lua" />
+                <LuaFile RelativePath=".\script\script\guide\MineralGuide.lua" />
+                <LuaFile RelativePath=".\script\script\guide\NewGuide.lua" />
+                <LuaFile RelativePath=".\script\script\guide\OlympicGuild.lua" />
+                <LuaFile RelativePath=".\script\script\guide\PetGuide.lua" />
+                <LuaFile RelativePath=".\script\script\guide\ResolveGuide.lua" />
+                <LuaFile RelativePath=".\script\script\guide\RobTreasureGuide.lua" />
+                <LuaFile RelativePath=".\script\script\guide\SignInGuide.lua" />
+                <LuaFile RelativePath=".\script\script\guide\StarHeroGuide.lua" />
+                <LuaFile RelativePath=".\script\script\guide\StrengthenGuide.lua" />
+                <LuaFile RelativePath=".\script\script\guide\TenLevelGiftGuide.lua" />
+                <LuaFile RelativePath=".\script\script\guide\XunLongGuide.lua" />
+                <Filter Name="overture" >
+                    <LuaFile RelativePath=".\script\script\guide\overture\BattleCardUtilLee.lua" />
+                    <LuaFile RelativePath=".\script\script\guide\overture\BattleLayerLee.lua" />
+                    <LuaFile RelativePath=".\script\script\guide\overture\BattleReportLayerLee.lua" />
+                    <LuaFile RelativePath=".\script\script\guide\overture\BattleTest.lua" />
+                    <LuaFile RelativePath=".\script\script\guide\overture\OTBattleData.lua" />
+                    <LuaFile RelativePath=".\script\script\guide\overture\OvertrueLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\guide\overture\PlayerCardLayerLee.lua" />
+                </Filter>
+            </Filter>
+            <Filter Name="libs" >
+                <LuaFile RelativePath=".\script\script\libs\LuaCC.lua" />
+                <LuaFile RelativePath=".\script\script\libs\LuaCCLabel.lua" />
+                <LuaFile RelativePath=".\script\script\libs\LuaCCMenuItem.lua" />
+                <LuaFile RelativePath=".\script\script\libs\LuaCCSprite.lua" />
+            </Filter>
+            <Filter Name="localized" >
+                <LuaFile RelativePath=".\script\script\localized\LocalizedStrings_cn.lua" />
+                <LuaFile RelativePath=".\script\script\localized\LocalizedStrings_tw.lua" />
+                <LuaFile RelativePath=".\script\script\localized\LocalizedUtil.lua" />
+            </Filter>
+            <Filter Name="model" >
+                <LuaFile RelativePath=".\script\script\model\DataCache.lua" />
+                <Filter Name="hero" >
+                    <LuaFile RelativePath=".\script\script\model\hero\AffixConfig.lua" />
+                    <LuaFile RelativePath=".\script\script\model\hero\HeroModel.lua" />
+                </Filter>
+                <Filter Name="user" >
+                    <LuaFile RelativePath=".\script\script\model\user\FormationModel.lua" />
+                    <LuaFile RelativePath=".\script\script\model\user\UserModel.lua" />
+                </Filter>
+                <Filter Name="utils" >
+                    <LuaFile RelativePath=".\script\script\model\utils\ActivityConfig.lua" />
+                    <LuaFile RelativePath=".\script\script\model\utils\ActivityConfigUtil.lua" />
+                    <LuaFile RelativePath=".\script\script\model\utils\HeroUtil.lua" />
+                    <LuaFile RelativePath=".\script\script\model\utils\UserUtil.lua" />
+                </Filter>
+            </Filter>
+            <Filter Name="network" >
+                <LuaFile RelativePath=".\script\script\network\Network.lua" />
+                <LuaFile RelativePath=".\script\script\network\PreRequest.lua" />
+                <LuaFile RelativePath=".\script\script\network\RequestCenter.lua" />
+                <Filter Name="user" >
+                    <LuaFile RelativePath=".\script\script\network\user\UserHandler.lua" />
+                </Filter>
+            </Filter>
+            <Filter Name="ui" >
+                <Filter Name="achie" >
+                    <LuaFile RelativePath=".\script\script\ui\achie\AchieInfoLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\achie\AchieItem.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\achie\AchieTip.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\achie\AchievementLayer.lua" />
+                </Filter>
+                <Filter Name="active" >
+                    <LuaFile RelativePath=".\script\script\ui\active\ActiveLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\active\ActiveList.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\active\AfterMineral.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\active\EnemyCell.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\active\MatchCell.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\active\MineralGrabGuard.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\active\MineralInfoLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\active\MineralLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\active\MineralMenuItem.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\active\MineralRobInfoLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\active\MineralUtil.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\active\RivalFriendLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\active\RivalInfoData.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\active\RivalInfoLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\active\RivalPetLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\active\RobLayer.lua" />
+                </Filter>
+                <Filter Name="arena" >
+                    <LuaFile RelativePath=".\script\script\ui\arena\AfterBattleLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\arena\ArenaChallenge.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\arena\ArenaData.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\arena\ArenaLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\arena\ArenaRankings.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\arena\ArenaService.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\arena\ChallengeCell.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\arena\LuckRankingList.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\arena\PrestigeShop.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\arena\PrestigeShopBuyLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\arena\PrestigeShopCell.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\arena\RankingsCell.lua" />
+                </Filter>
+                <Filter Name="astrology" >
+                    <LuaFile RelativePath=".\script\script\ui\astrology\AstrologyDescLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\astrology\AstrologyLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\astrology\AstrologyRewardLayer.lua" />
+                </Filter>
+                <Filter Name="bag" >
+                    <LuaFile RelativePath=".\script\script\ui\bag\BagCell.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\bag\BagLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\bag\BagUtil.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\bag\BatchUseLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\bag\EquipBagCell.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\bag\FashionCell.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\bag\ItemCell.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\bag\TreasBagCell.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\bag\UseGiftLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\bag\UseItemLayer.lua" />
+                </Filter>
+                <Filter Name="battlemission" >
+                    <LuaFile RelativePath=".\script\script\ui\battlemission\EquipMissionLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\battlemission\GoodMissionLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\battlemission\MissionAfterBattle.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\battlemission\MissionData.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\battlemission\MissionEquipResolveCell.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\battlemission\MissionGoodResolveCell.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\battlemission\MissionLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\battlemission\MissionService.lua" />
+                </Filter>
+                <Filter Name="biography" >
+                    <LuaFile RelativePath=".\script\script\ui\biography\ComprehendInheritLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\biography\ComprehendLayer.lua" />
+                </Filter>
+                <Filter Name="boss" >
+                    <LuaFile RelativePath=".\script\script\ui\boss\BossData.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\boss\BossMainLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\boss\BossNet.lua" />
+                </Filter>
+                <Filter Name="chat" >
+                    <LuaFile RelativePath=".\script\script\ui\chat\ChangeHeadLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\chat\ChatBroadCastLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\chat\ChatCache.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\chat\ChatGmLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\chat\ChatInfoCell.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\chat\ChatMainLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\chat\ChatPmLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\chat\ChatUnionLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\chat\ChatUserInfoLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\chat\ChatUtil.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\chat\ChatWorldLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\chat\LeaveMessageDialog.lua" />
+                </Filter>
+                <Filter Name="common" >
+                    <LuaFile RelativePath=".\script\script\ui\common\CafterBattleLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\common\CheckBoxItem.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\common\LuaMenuItem.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\common\PublicSpecialEffects.lua" />
+                </Filter>
+                <Filter Name="copy" >
+                    <LuaFile RelativePath=".\script\script\ui\copy\ACopyCell.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\copy\AfterTreeBoss.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\copy\BattleLand.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\copy\BigMap.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\copy\CityMenuItem.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\copy\CityTipLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\copy\CopyCell.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\copy\CopyLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\copy\CopyRankCell.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\copy\CopyRankLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\copy\CopyRewardBtn.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\copy\CopyRewardLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\copy\CopyUtil.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\copy\DesLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\copy\ECopyCell.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\copy\EliteBorder.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\copy\Fight10Border.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\copy\Fight10BorderCell.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\copy\FortDefeatNUmTip.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\copy\FortInfoLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\copy\FortItem.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\copy\FortItemSprite.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\copy\FortsLayout.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\copy\GoldTreeBorder.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\copy\HeroFragInfoLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\copy\IconCell.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\copy\IconCelldown.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\copy\ShowAwardWayCell.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\copy\ShowAwardWayLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\copy\ShowNewCopyLayer.lua" />
+                </Filter>
+                <Filter Name="create_user" >
+                    <LuaFile RelativePath=".\script\script\ui\create_user\SelectUserLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\create_user\UserLayer.lua" />
+                </Filter>
+                <Filter Name="destiny" >
+                    <LuaFile RelativePath=".\script\script\ui\destiny\DestinyData.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\destiny\DestinyLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\destiny\DestinyUtil.lua" />
+                </Filter>
+                <Filter Name="develop" >
+                    <LuaFile RelativePath=".\script\script\ui\develop\DevelopData.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\develop\DevelopLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\develop\DevelopService.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\develop\DevelopSuccessLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\develop\SelectHeroLayer.lua" />
+                    <Filter Name="orangePreview" >
+                        <LuaFile RelativePath=".\script\script\ui\develop\orangePreview\OrangePreviewLayer.lua" />
+                        <LuaFile RelativePath=".\script\script\ui\develop\orangePreview\OrangeTableView.lua" />
+                    </Filter>
+                </Filter>
+                <Filter Name="digCowry" >
+                    <LuaFile RelativePath=".\script\script\ui\digCowry\DigCowryData.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\digCowry\DigCowryLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\digCowry\DigCowryNet.lua" />
+                </Filter>
+                <Filter Name="everyday" >
+                    <LuaFile RelativePath=".\script\script\ui\everyday\EverydayCell.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\everyday\EverydayData.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\everyday\EverydayLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\everyday\EverydayService.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\everyday\ShowBoxLayer.lua" />
+                </Filter>
+                <Filter Name="exchange" >
+                    <LuaFile RelativePath=".\script\script\ui\exchange\FindLongExchangeBuyLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\exchange\FindLongExchangeCache.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\exchange\FindLongExchangeCell.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\exchange\FindLongExchangeLayer.lua" />
+                </Filter>
+                <Filter Name="famoushero" >
+                    <LuaFile RelativePath=".\script\script\ui\famoushero\HeroEnterLayer.lua" />
+                </Filter>
+                <Filter Name="fashion" >
+                    <LuaFile RelativePath=".\script\script\ui\fashion\ChangeFashion.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\fashion\FashionData.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\fashion\FashionEnhanceLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\fashion\FashionInfo.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\fashion\FashionLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\fashion\FashionNet.lua" />
+                </Filter>
+                <Filter Name="forge" >
+                    <LuaFile RelativePath=".\script\script\ui\forge\AutoFindDescLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\forge\AutoFindLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\forge\AutoFindResultLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\forge\AutoFindTipLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\forge\ChooseViewCell.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\forge\ChooseViewLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\forge\FightResultLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\forge\FindFormationLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\forge\FindTreasureDescLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\forge\FindTreasureLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\forge\FindTreasureUtil.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\forge\ForgeData.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\forge\ForgeLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\forge\ForgeService.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\forge\ForgeTipLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\forge\ForgeViewLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\forge\PathUtil.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\forge\SelecteBuyCountLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\forge\TreasureDialog.lua" />
+                </Filter>
+                <Filter Name="formation" >
+                    <LuaFile RelativePath=".\script\script\ui\formation\ChangeEquipLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\formation\ChangeOfficerLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\formation\EquipCell.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\formation\FOfficerCell.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\formation\FormationLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\formation\FormationUtil.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\formation\FTreasCell.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\formation\HeroCell.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\formation\HeroSprite.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\formation\LittleFriendData.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\formation\LittleFriendLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\formation\LittleFriendOne.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\formation\LittleFriendService.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\formation\MakeUpFormationLayer.lua" />
+                </Filter>
+                <Filter Name="friend" >
+                    <LuaFile RelativePath=".\script\script\ui\friend\BlackListCell.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\friend\BlackListLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\friend\ExchangeLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\friend\FriendData.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\friend\FriendLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\friend\FriendService.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\friend\GetStaminaCell.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\friend\GetStaminaLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\friend\MyFriendCell.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\friend\MyFriendLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\friend\PKFriendLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\friend\RecommendCell.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\friend\RecommendLayer.lua" />
+                </Filter>
+                <Filter Name="guild" >
+                    <LuaFile RelativePath=".\script\script\ui\guild\AddAndChat.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\guild\CheckSortLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\guild\ConfirmCodeLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\guild\GuangongPreviewCell.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\guild\GuanGongRewardLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\guild\GuangongTempleLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\guild\GuildAffairsLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\guild\GuildAfterBattleLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\guild\GuildBottomSprite.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\guild\GuildBuildingItem.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\guild\GuildCodeLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\guild\GuildDataCache.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\guild\GuildDeclarationLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\guild\GuildDynamicCell.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\guild\GuildDynamicLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\guild\GuildHallLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\guild\GuildImpeachmentLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\guild\GuildImpl.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\guild\GuildListCell.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\guild\GuildListLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\guild\GuildMainLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\guild\GuildManagementLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\guild\GuildMemberCell.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\guild\GuildShopBuyLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\guild\GuildShopCell.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\guild\GuildShopLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\guild\GuildTipsLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\guild\GuildUtil.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\guild\MemberListLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\guild\MessageBoardLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\guild\ShowGuangongReward.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\guild\ShowGuildLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\guild\UpgradeAlertTip.lua" />
+                    <Filter Name="city" >
+                        <LuaFile RelativePath=".\script\script\ui\guild\city\ApplyCityLayer.lua" />
+                        <LuaFile RelativePath=".\script\script\ui\guild\city\BattlefieldReportLayer.lua" />
+                        <LuaFile RelativePath=".\script\script\ui\guild\city\CityAfterBattleLayer.lua" />
+                        <LuaFile RelativePath=".\script\script\ui\guild\city\CityData.lua" />
+                        <LuaFile RelativePath=".\script\script\ui\guild\city\CityInfoLayer.lua" />
+                        <LuaFile RelativePath=".\script\script\ui\guild\city\CityReward.lua" />
+                        <LuaFile RelativePath=".\script\script\ui\guild\city\CityService.lua" />
+                        <LuaFile RelativePath=".\script\script\ui\guild\city\LookApplyLayer.lua" />
+                        <LuaFile RelativePath=".\script\script\ui\guild\city\VisitorBattleLayer.lua" />
+                    </Filter>
+                    <Filter Name="copy" >
+                        <LuaFile RelativePath=".\script\script\ui\guild\copy\GuildBattleReportLayer.lua" />
+                        <LuaFile RelativePath=".\script\script\ui\guild\copy\GuildCopyCell.lua" />
+                        <LuaFile RelativePath=".\script\script\ui\guild\copy\GuildCopyLayer.lua" />
+                        <LuaFile RelativePath=".\script\script\ui\guild\copy\GuildTeamData.lua" />
+                    </Filter>
+                    <Filter Name="rank" >
+                        <LuaFile RelativePath=".\script\script\ui\guild\rank\GuildRankCell.lua" />
+                        <LuaFile RelativePath=".\script\script\ui\guild\rank\GuildRankData.lua" />
+                        <LuaFile RelativePath=".\script\script\ui\guild\rank\GuildRankLayer.lua" />
+                        <LuaFile RelativePath=".\script\script\ui\guild\rank\GuildRankService.lua" />
+                    </Filter>
+                </Filter>
+                <Filter Name="hero" >
+                    <LuaFile RelativePath=".\script\script\ui\hero\FightSoulAttrDialog.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\hero\HeroFightForce.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\hero\HeroFightSimple.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\hero\HeroInfoLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\hero\HeroLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\hero\HeroLayerCell.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\hero\HeroPublicCC.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\hero\HeroPublicLua.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\hero\HeroPublicUI.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\hero\HeroSelectLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\hero\HeroSellLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\hero\HeroSort.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\hero\HeroSoulLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\hero\HeroStrengthenLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\hero\HeroTransferLayer.lua" />
+                </Filter>
+                <Filter Name="heroCpy" >
+                    <LuaFile RelativePath=".\script\script\ui\heroCpy\HeroEnter.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\heroCpy\HeroFortInfoLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\heroCpy\HeroFortItemSprite.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\heroCpy\HeroLayout.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\heroCpy\PassHeroCopyLayer.lua" />
+                </Filter>
+                <Filter Name="huntSoul" >
+                    <LuaFile RelativePath=".\script\script\ui\huntSoul\CallDragonDialog.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\huntSoul\FightSoulCell.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\huntSoul\FightSoulLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\huntSoul\HuntSoulData.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\huntSoul\HuntSoulLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\huntSoul\HuntSoulService.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\huntSoul\introduceLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\huntSoul\SearchSoulLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\huntSoul\ShowTenGetDialog.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\huntSoul\SoulInfoLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\huntSoul\UpgradeByStarLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\huntSoul\UpgradeFightSoulLayer.lua" />
+                </Filter>
+                <Filter Name="intro" >
+                    <LuaFile RelativePath=".\script\script\ui\intro\IntroLayer.lua" />
+                </Filter>
+                <Filter Name="item" >
+                    <LuaFile RelativePath=".\script\script\ui\item\EnergyAlertTip.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\item\EquipCardSprite.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\item\EquipFixedData.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\item\EquipFixedLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\item\EquipFixedService.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\item\EquipInfoLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\item\EquipReinforceLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\item\ItemInfoLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\item\ItemSprite.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\item\ItemUtil.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\item\NewTreasInfoLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\item\ReceiveReward.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\item\StaminaAlertTip.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\item\SuitInfoLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\item\TreasCardSprite.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\item\TreasInfoLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\item\TreasReinforceLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\item\TreasSelectLayer.lua" />
+                </Filter>
+                <Filter Name="level_reward" >
+                    <LuaFile RelativePath=".\script\script\ui\level_reward\GoodsCell.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\level_reward\LevelRewardBtn.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\level_reward\LevelRewardCell.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\level_reward\LevelRewardLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\level_reward\LevelRewardUtil.lua" />
+                </Filter>
+                <Filter Name="login" >
+                    <LuaFile RelativePath=".\script\script\ui\login\AppLoginLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\login\ChangePasswordLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\login\CheckVerionLogic.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\login\DownloadUI.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\login\LoginScene.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\login\RegisterLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\login\ServerList.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\login\ShowLogoUI.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\login\UpdateResUI.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\login\UpgradeUI.lua" />
+                </Filter>
+                <Filter Name="lordWar" >
+                    <LuaFile RelativePath=".\script\script\ui\lordWar\ChampionLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\lordWar\CheersLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\lordWar\LordWar32Layer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\lordWar\LordWar4Layer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\lordWar\LordWarCheerLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\lordWar\LordWarData.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\lordWar\LordWarEventDispatcher.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\lordWar\LordWarExplainDialog.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\lordWar\LordWarMainLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\lordWar\LordWarService.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\lordWar\LordWarUtil.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\lordWar\MyInfoLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\lordWar\MySupportLayer.lua" />
+                    <Filter Name="myReport" >
+                        <LuaFile RelativePath=".\script\script\ui\lordWar\myReport\MyReportNode.lua" />
+                        <LuaFile RelativePath=".\script\script\ui\lordWar\myReport\MyReportTableView.lua" />
+                    </Filter>
+                    <Filter Name="reward" >
+                        <LuaFile RelativePath=".\script\script\ui\lordWar\reward\LordWarRewardLayer.lua" />
+                        <LuaFile RelativePath=".\script\script\ui\lordWar\reward\LordWarRewardSelect.lua" />
+                        <LuaFile RelativePath=".\script\script\ui\lordWar\reward\LordWarRewardTableView.lua" />
+                        <LuaFile RelativePath=".\script\script\ui\lordWar\reward\WishRewardLayer.lua" />
+                        <LuaFile RelativePath=".\script\script\ui\lordWar\reward\WishRewardTableView.lua" />
+                    </Filter>
+                    <Filter Name="warReport" >
+                        <LuaFile RelativePath=".\script\script\ui\lordWar\warReport\WarReportLayer.lua" />
+                        <LuaFile RelativePath=".\script\script\ui\lordWar\warReport\WarTableView.lua" />
+                    </Filter>
+                </Filter>
+                <Filter Name="mail" >
+                    <LuaFile RelativePath=".\script\script\ui\mail\AllMail.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\mail\BattleMail.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\mail\FriendMail.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\mail\Mail.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\mail\MailCell.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\mail\MailData.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\mail\MailService.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\mail\MineralMail.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\mail\MineralMailCell.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\mail\ReplyMessage.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\mail\SystemMail.lua" />
+                </Filter>
+                <Filter Name="main" >
+                    <LuaFile RelativePath=".\script\script\ui\main\AvatarInfoLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\main\BulletinData.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\main\BulletinLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\main\ChangeUserNameLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\main\GameNotice02.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\main\MainBaseLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\main\MainScene.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\main\MenuLayer.lua" />
+                </Filter>
+                <Filter Name="match" >
+                    <LuaFile RelativePath=".\script\script\ui\match\BuyMatchNum.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\match\ContestRewardCell.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\match\HonorShop.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\match\HonorShopBuyLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\match\HonorShopCell.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\match\MatchData.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\match\MatchEnemy.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\match\MatchEnemyCell.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\match\MatchLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\match\MatchPlace.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\match\MatchRankingsLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\match\MatchService.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\match\RestTimeLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\match\ShowContestReward.lua" />
+                </Filter>
+                <Filter Name="menu" >
+                    <LuaFile RelativePath=".\script\script\ui\menu\CCMenuLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\menu\HeroShowLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\menu\IllustrateLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\menu\IllustratUtil.lua" />
+                </Filter>
+                <Filter Name="mergeServer" >
+                    <Filter Name="accumulate" >
+                        <LuaFile RelativePath=".\script\script\ui\mergeServer\accumulate\AccumulateActivity.lua" />
+                        <LuaFile RelativePath=".\script\script\ui\mergeServer\accumulate\AccumulateData.lua" />
+                        <LuaFile RelativePath=".\script\script\ui\mergeServer\accumulate\AccumulateService.lua" />
+                        <LuaFile RelativePath=".\script\script\ui\mergeServer\accumulate\MergeScrollView.lua" />
+                    </Filter>
+                </Filter>
+                <Filter Name="month_card" >
+                    <LuaFile RelativePath=".\script\script\ui\month_card\MonthCardData.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\month_card\MonthCardLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\month_card\MonthCardService.lua" />
+                </Filter>
+                <Filter Name="network" >
+                    <LuaFile RelativePath=".\script\script\ui\network\LoadingUI.lua" />
+                </Filter>
+                <Filter Name="olympic" >
+                    <LuaFile RelativePath=".\script\script\ui\olympic\ApplyOlympicDialog.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\olympic\AwardPoolLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\olympic\ChallengeOlympicDialog.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\olympic\CheerUpLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\olympic\ExplainDialog.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\olympic\Olympic32Layer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\olympic\Olympic4Layer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\olympic\OlympicData.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\olympic\OlympicPrepareLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\olympic\OlympicRegisterLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\olympic\OlympicService.lua" />
+                    <Filter Name="battleReport" >
+                        <LuaFile RelativePath=".\script\script\ui\olympic\battleReport\CheckBattleReportLayer.lua" />
+                        <LuaFile RelativePath=".\script\script\ui\olympic\battleReport\ReportTableView.lua" />
+                    </Filter>
+                    <Filter Name="rewardPreview" >
+                        <LuaFile RelativePath=".\script\script\ui\olympic\rewardPreview\OlympicRewardLayer.lua" />
+                        <LuaFile RelativePath=".\script\script\ui\olympic\rewardPreview\PreviewTableView.lua" />
+                    </Filter>
+                </Filter>
+                <Filter Name="online" >
+                    <LuaFile RelativePath=".\script\script\ui\online\OnlineLayerCell.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\online\OnlineRewardBtn.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\online\TimeCache.lua" />
+                </Filter>
+                <Filter Name="pet" >
+                    <LuaFile RelativePath=".\script\script\ui\pet\FeedCell.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\pet\OpenPetSquandTip.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\pet\PetBagCell.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\pet\PetBagLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\pet\PetBasicInfoLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\pet\PetData.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\pet\PetDescription.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\pet\PetFragCell.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\pet\PetInfoLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\pet\PetLockTip.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\pet\PetMainLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\pet\PetSelectCell.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\pet\PetSelFormatCell.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\pet\PetSelFormatLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\pet\PetService.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\pet\PetSkillInfoLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\pet\PetUtil.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\pet\SellPetLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\pet\SelSwallowPetLayer.lua" />
+                    <Filter Name="description" >
+                        <LuaFile RelativePath=".\script\script\ui\pet\description\PetDescriptionData.lua" />
+                        <LuaFile RelativePath=".\script\script\ui\pet\description\PetDescriptionPanel.lua" />
+                        <LuaFile RelativePath=".\script\script\ui\pet\description\PetIllustratedHandbookCell.lua" />
+                        <LuaFile RelativePath=".\script\script\ui\pet\description\PetTipPanel.lua" />
+                    </Filter>
+                </Filter>
+                <Filter Name="rank" >
+                    <LuaFile RelativePath=".\script\script\ui\rank\PetLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\rank\RankCell.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\rank\RankData.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\rank\RankLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\rank\RankService.lua" />
+                </Filter>
+                <Filter Name="rechargeActive" >
+                    <LuaFile RelativePath=".\script\script\ui\rechargeActive\ActiveCache.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\rechargeActive\ActiveUtil.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\rechargeActive\BenefitActiveLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\rechargeActive\BenefitCardLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\rechargeActive\CardPackActiveLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\rechargeActive\CardPackDescLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\rechargeActive\ChangeActiveLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\rechargeActive\ChangeItemShowLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\rechargeActive\ConsumeCell.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\rechargeActive\ConsumeLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\rechargeActive\FirstPackLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\rechargeActive\GrowthFundCell.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\rechargeActive\GrowthFundLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\rechargeActive\MysteryMerchantCell.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\rechargeActive\MysteryMerchantDialog.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\rechargeActive\MysteryMerchantLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\rechargeActive\MysteryShopCell.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\rechargeActive\MysteryShopLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\rechargeActive\NewYearCell.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\rechargeActive\NewYearLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\rechargeActive\RechargeActiveMain.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\rechargeActive\RechargeFeedbackCache.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\rechargeActive\RechargeFeedbackCell.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\rechargeActive\RechargeFeedbackLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\rechargeActive\RestoreEnergyLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\rechargeActive\TuanData.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\rechargeActive\TuanLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\rechargeActive\TuanRewardCell.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\rechargeActive\TuanService.lua" />
+                    <Filter Name="chargeRaffle" >
+                        <LuaFile RelativePath=".\script\script\ui\rechargeActive\chargeRaffle\ChargeRaffleData.lua" />
+                        <LuaFile RelativePath=".\script\script\ui\rechargeActive\chargeRaffle\ChargeRaffleLayer.lua" />
+                        <LuaFile RelativePath=".\script\script\ui\rechargeActive\chargeRaffle\ChargeRaffleService.lua" />
+                        <LuaFile RelativePath=".\script\script\ui\rechargeActive\chargeRaffle\RaffleItemLayer.lua" />
+                    </Filter>
+                    <Filter Name="rechargeBigRun" >
+                        <LuaFile RelativePath=".\script\script\ui\rechargeActive\rechargeBigRun\RechargeBigRunData.lua" />
+                        <LuaFile RelativePath=".\script\script\ui\rechargeActive\rechargeBigRun\RechargeBigRunLayer.lua" />
+                        <LuaFile RelativePath=".\script\script\ui\rechargeActive\rechargeBigRun\RechargeBigRunService.lua" />
+                        <LuaFile RelativePath=".\script\script\ui\rechargeActive\rechargeBigRun\RunPreviewTableView.lua" />
+                        <LuaFile RelativePath=".\script\script\ui\rechargeActive\rechargeBigRun\ShowGiftTableView.lua" />
+                    </Filter>
+                    <Filter Name="stepCounterActive" >
+                        <LuaFile RelativePath=".\script\script\ui\rechargeActive\stepCounterActive\StepCounterData.lua" />
+                        <LuaFile RelativePath=".\script\script\ui\rechargeActive\stepCounterActive\StepCounterLayer.lua" />
+                        <LuaFile RelativePath=".\script\script\ui\rechargeActive\stepCounterActive\StepCounterService.lua" />
+                        <LuaFile RelativePath=".\script\script\ui\rechargeActive\stepCounterActive\StepTableView.lua" />
+                    </Filter>
+                    <Filter Name="transfer" >
+                        <LuaFile RelativePath=".\script\script\ui\rechargeActive\transfer\PreviewLayer.lua" />
+                        <LuaFile RelativePath=".\script\script\ui\rechargeActive\transfer\TransferLayer.lua" />
+                    </Filter>
+                </Filter>
+                <Filter Name="recycle" >
+                    <LuaFile RelativePath=".\script\script\ui\recycle\BreakDownGiftLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\recycle\BreakDownLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\recycle\BreakDownSay.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\recycle\BreakDowwnTip.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\recycle\ClothBreakDoenTip.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\recycle\ClothResolveCell.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\recycle\EquipResolveCell.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\recycle\GoodResolveCell.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\recycle\HeroResolveCell.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\recycle\ItemBreakTip.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\recycle\RebornSelectLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\recycle\RecycleMain.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\recycle\ResolveSelectLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\recycle\ResurrectGiftLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\recycle\ResurrectLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\recycle\ResurrectSay.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\recycle\TreasureBreakDowwnTip.lua" />
+                </Filter>
+                <Filter Name="replaceSkill" >
+                    <LuaFile RelativePath=".\script\script\ui\replaceSkill\AlertGetLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\replaceSkill\AlertLevelLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\replaceSkill\AttributePanel.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\replaceSkill\BronzeFlipCardLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\replaceSkill\CardIntroductionLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\replaceSkill\CreateUI.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\replaceSkill\EquipmentLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\replaceSkill\EquipmentTableView.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\replaceSkill\FlipCardLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\replaceSkill\OneKeyTip.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\replaceSkill\PracticeResultLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\replaceSkill\ReplaceSkillData.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\replaceSkill\ReplaceSkillFightPanel.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\replaceSkill\ReplaceSkillLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\replaceSkill\ReplaceSkillRewardLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\replaceSkill\ReplaceSkillRewardTableView.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\replaceSkill\ReplaceSkillService.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\replaceSkill\TrainIntroductionLayer.lua" />
+                    <Filter Name="learnSkill" >
+                        <LuaFile RelativePath=".\script\script\ui\replaceSkill\learnSkill\LearnSkillLayer.lua" />
+                        <LuaFile RelativePath=".\script\script\ui\replaceSkill\learnSkill\PreviewSkillLayer.lua" />
+                        <LuaFile RelativePath=".\script\script\ui\replaceSkill\learnSkill\SelectSkillLayer.lua" />
+                    </Filter>
+                    <Filter Name="MasterRecord" >
+                        <LuaFile RelativePath=".\script\script\ui\replaceSkill\MasterRecord\MasterRecordLayer.lua" />
+                        <LuaFile RelativePath=".\script\script\ui\replaceSkill\MasterRecord\MasterTableView.lua" />
+                    </Filter>
+                </Filter>
+                <Filter Name="rewardCenter" >
+                    <LuaFile RelativePath=".\script\script\ui\rewardCenter\AdaptTool.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\rewardCenter\RewardCenterData.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\rewardCenter\RewardCenterService.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\rewardCenter\RewardCenterView.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\rewardCenter\RewardTableCell.lua" />
+                </Filter>
+                <Filter Name="reward_code" >
+                    <LuaFile RelativePath=".\script\script\ui\reward_code\RewardCodeLayer.lua" />
+                </Filter>
+                <Filter Name="share" >
+                    <LuaFile RelativePath=".\script\script\ui\share\ShareLayer.lua" />
+                </Filter>
+                <Filter Name="shop" >
+                    <LuaFile RelativePath=".\script\script\ui\shop\BuyGiftDialog.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\shop\ExchangeCell.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\shop\GiftService.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\shop\GiftsPakLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\shop\GiftsTableCell.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\shop\HeroDisplayerLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\shop\HeroExchange.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\shop\PreHeroShowLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\shop\PropCell.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\shop\PropLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\shop\PubLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\shop\PurchaseLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\shop\RecharData.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\shop\RechargeCell.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\shop\RechargeLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\shop\SeniorAnimationLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\shop\SeniorHeroRecruitLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\shop\ShopLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\shop\ShopUtil.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\shop\TenHeroRecuitLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\shop\VipPrivilegeLayer.lua" />
+                </Filter>
+                <Filter Name="showOff" >
+                    <LuaFile RelativePath=".\script\script\ui\showOff\ShowOffUtil.lua" />
+                </Filter>
+                <Filter Name="sign" >
+                    <LuaFile RelativePath=".\script\script\ui\sign\AccSignRewardCell.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\sign\AccSignRewardLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\sign\SignCache.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\sign\SignRewardCell.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\sign\SignRewardLayer.lua" />
+                </Filter>
+                <Filter Name="star" >
+                    <LuaFile RelativePath=".\script\script\ui\star\ShowStarExchangeTip.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\star\StarAchieveCell.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\star\StarAchieveLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\star\StarAllAttrLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\star\StarAttrCell.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\star\StarDirLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\star\StarGiftCell.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\star\StarLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\star\StarSprite.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\star\StarTriger.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\star\StarUtil.lua" />
+                </Filter>
+                <Filter Name="stithy" >
+                    <LuaFile RelativePath=".\script\script\ui\stithy\StithyLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\stithy\StithyUtil.lua" />
+                </Filter>
+                <Filter Name="strengthen_place" >
+                    <LuaFile RelativePath=".\script\script\ui\strengthen_place\HeroStrengthenScrollView.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\strengthen_place\HeroTransferScrollView.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\strengthen_place\StrengthenPlaceLayer.lua" />
+                </Filter>
+                <Filter Name="switch" >
+                    <LuaFile RelativePath=".\script\script\ui\switch\SwitchOpen.lua" />
+                </Filter>
+                <Filter Name="talk" >
+                    <LuaFile RelativePath=".\script\script\ui\talk\talkLayer.lua" />
+                </Filter>
+                <Filter Name="teamGroup" >
+                    <LuaFile RelativePath=".\script\script\ui\teamGroup\ReceiveInviteCell.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\teamGroup\ReceiveInviteLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\teamGroup\TeamChangeCell.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\teamGroup\TeamChangeLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\teamGroup\TeamGroupCell.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\teamGroup\TeamGroupData.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\teamGroup\TeamGroupLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\teamGroup\TeamGruopService.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\teamGroup\TeamInviteCell.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\teamGroup\TeamInviteLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\teamGroup\VictoryDropLayer.lua" />
+                </Filter>
+                <Filter Name="tip" >
+                    <LuaFile RelativePath=".\script\script\ui\tip\AlertTip.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\tip\AlertTip2.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\tip\AlertTipGold.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\tip\AnimationTip.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\tip\AttrTip.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\tip\BuyCopyAtkLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\tip\LackGoldTip.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\tip\RichAlertTip.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\tip\RichAnimationTip.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\tip\ScroAletTip.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\tip\SingleTip.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\tip\TipByNode.lua" />
+                </Filter>
+                <Filter Name="tower" >
+                    <LuaFile RelativePath=".\script\script\ui\tower\ChooseFinishLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\tower\RewardPreviewCell.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\tower\RewardPreviewLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\tower\RewardSecretCell.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\tower\RewardSecretLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\tower\SweepFinish.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\tower\TowerCache.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\tower\TowerDefeatNumTip.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\tower\TowerMainLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\tower\TowerRankCell.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\tower\TowerRankLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\tower\TowerRewardLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\tower\TowerUtil.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\tower\WipeOutLayer.lua" />
+                </Filter>
+                <Filter Name="treasure" >
+                    <LuaFile RelativePath=".\script\script\ui\treasure\QuickRobData.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\treasure\QuickRobResultCell.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\treasure\QuickRobResultLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\treasure\QuickRobRewardLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\treasure\RobBattleResultView.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\treasure\RobTreasureCell.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\treasure\RobTreasureView.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\treasure\ShieldWarLay.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\treasure\TreasureData.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\treasure\TreasureFragmentInfoView.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\treasure\TreasureFuseView.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\treasure\TreasureMainView.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\treasure\TreasureService.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\treasure\TreasureUtil.lua" />
+                    <Filter Name="evolve" >
+                        <LuaFile RelativePath=".\script\script\ui\treasure\evolve\TreasEvolveSuccessLayer.lua" />
+                        <LuaFile RelativePath=".\script\script\ui\treasure\evolve\TreasRefineSelCell.lua" />
+                        <LuaFile RelativePath=".\script\script\ui\treasure\evolve\TreasRefineSelLayer.lua" />
+                        <LuaFile RelativePath=".\script\script\ui\treasure\evolve\TreasureEvolveMainView.lua" />
+                        <LuaFile RelativePath=".\script\script\ui\treasure\evolve\TreasureEvolveService.lua" />
+                        <LuaFile RelativePath=".\script\script\ui\treasure\evolve\TreasureEvolveUtil.lua" />
+                    </Filter>
+                </Filter>
+                <Filter Name="upgrade_tip" >
+                    <LuaFile RelativePath=".\script\script\ui\upgrade_tip\UpgradeLayer.lua" />
+                </Filter>
+                <Filter Name="vip_benefit" >
+                    <LuaFile RelativePath=".\script\script\ui\vip_benefit\VIPBenefitLayer.lua" />
+                    <LuaFile RelativePath=".\script\script\ui\vip_benefit\VIPNumTool.lua" />
+                </Filter>
+            </Filter>
+            <Filter Name="utils" >
+                <LuaFile RelativePath=".\script\script\utils\BaseUI.lua" />
+                <LuaFile RelativePath=".\script\script\utils\CardTurnView.lua" />
+                <LuaFile RelativePath=".\script\script\utils\CsvParse.lua" />
+                <LuaFile RelativePath=".\script\script\utils\DebugUtil.lua" />
+                <LuaFile RelativePath=".\script\script\utils\ErrorReport.lua" />
+                <LuaFile RelativePath=".\script\script\utils\extern.lua" />
+                <LuaFile RelativePath=".\script\script\utils\FBUtil.lua" />
+                <LuaFile RelativePath=".\script\script\utils\GoodTableView.lua" />
+                <LuaFile RelativePath=".\script\script\utils\ItemDropUtil.lua" />
+                <LuaFile RelativePath=".\script\script\utils\ItemTableView.lua" />
+                <LuaFile RelativePath=".\script\script\utils\LevelUpUtil.lua" />
+                <LuaFile RelativePath=".\script\script\utils\LuaUtil.lua" />
+                <LuaFile RelativePath=".\script\script\utils\LuaXml.lua" />
+                <LuaFile RelativePath=".\script\script\utils\NotificationUtil.lua" />
+                <LuaFile RelativePath=".\script\script\utils\PreFunction.lua" />
+                <LuaFile RelativePath=".\script\script\utils\TimerRequestCenter.lua" />
+                <LuaFile RelativePath=".\script\script\utils\TimeUtil.lua" />
+            </Filter>
+        </Filter>
+    </Filter>
+</Project>
