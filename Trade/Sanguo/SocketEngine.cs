@@ -109,22 +109,31 @@ namespace Sanguo
                          g.getFormation();
                          break;
                      case "IFormation.getFormation":
-                         g.enterBaseLevel();
-                         g.SetHerorID(GetHeroID(co));
+                         g.parseFormation(co);
+                         g.enterBaseLevel();                         
+                         //g.SetHerorID(GetHeroID(co));
                          break;
                      case "ncopy.enterBaseLevel":
 
                          //g.doBattle();
                         // System.Threading.Thread.Sleep(5000);
-                         g.do1stBattle();
+                         g.startBattle();
 
                          break;
                      case "ncopy.doBattle":
-                        // g.leaveBaseLevel();
-                         
+                         if (g.config.battleFlag < 4)
+                         {
+                             g.startBattle();
+                         }
+                         else
+                         {
+                             g.leaveBaseLevel();
+                         }                         
                          break;
-
-
+                     case "ncopy.leaveBaseLevel":
+                         //g.config = new Config();
+                         //g.enterBaseLevel();
+                         break;
                      default://user.getSwitchInfo
                          break;
                  }

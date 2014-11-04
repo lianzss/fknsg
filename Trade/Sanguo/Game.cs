@@ -24,7 +24,7 @@ namespace Sanguo
             Console.WriteLine("hello");
             Game game = new Game();
 
-            //game.Register();
+            game.Register();
             game.Start();
         }
 
@@ -103,8 +103,8 @@ namespace Sanguo
 
         public void Start()
         {
-            config.username = "Ps7XdFw9";
-            config.pwd = "rsBLm5";
+            //config.username = "H02C58Uc";
+            //config.pwd = "qdaitA";
             //get the serverlist
             HttpClient wc = new HttpClient();
             string getServersUrl = "http://mapifknsg.zuiyouxi.com/phone/serverlistnotice/?&pl=Mjbaidupinzhuan&gn=sanguo&os=android&other_pl=zyxphone";
@@ -196,38 +196,126 @@ namespace Sanguo
             Send(d);
         }
 
+        public void parseFormation(CNameObjDict co)
+        {
+            CMixArray cm = (CMixArray)co["ret"];
+            Dictionary<string, object> formation = new Dictionary<string, object>();
+            for (int i = 0; i < 6; i++)
+            {
+                formation[i.ToString()] = cm[i];
+            }
+            config.formation = formation;
+        }
+
         public void enterBaseLevel()
         {
             Dictionary<string, object> d = getObject("method", "ncopy.enterBaseLevel");
             d["callback"] = getObject("callbackName", "ncopy.enterBaseLevel");
             d["token"] = config.token;
+            config.battlebaseID = config.battlecopyID * 1000 + config.battlebaseID;
             config.baseID = config.copyID * 1000 + config.baseID;
-            d["args"] = new object[3] { config.copyID ,config.baseID,config.baseLevel};
+            if (config.battleFlag < 4)
+            {
+                d["args"] = new object[3] { config.copyID, config.baseID, config.baseLevel };
+            }
+            else
+            {
+                d["args"] = new object[3] { config.battlecopyID, config.battlebaseID, config.battlebaseLevel };
+            }
             Send(d);
         }
+
+       public void startBattle()
+       {
+           switch (config.battleFlag)
+           {
+               case 0:
+                   do1stBattle();
+                   config.battleFlag++;
+                   break;
+               case 1:
+                   do2ndBattle();
+                   config.battleFlag++;
+                   break;
+               case 2:
+                   do3rdBattle();
+                   config.battleFlag++;
+                   break;
+               case 3:
+                   do4thBattle();
+                   config.battleFlag++;
+                   break;
+               default:
+                   doBattle();
+                   break;
+           }
+       }
 
         public void doBattle()
         {
-
+            config.baseID = 2;
+            config.copyID = 1;
+            config.baseLevel = 1;
+            config.armyID = 1006;
             Dictionary<string, object> d = getObject("method", "ncopy.doBattle");
             d["callback"] = getObject("callbackName", "ncopy.doBattle");
             d["token"] = config.token;
-            //config.baseID = config.copyID * 1000 + config.baseID;
-            d["args"] = new object[4] { config.copyID, config.baseID, config.baseLevel,config.armyID };
+            d["args"] = new object[5] { config.battlecopyID, config.battlebaseID, config.battlebaseLevel, config.battlearmyID, new Dictionary<string, object>() };
             Send(d);
         }
-
 
         public void do1stBattle()
         {
+
             Dictionary<string, object> d = getObject("method", "ncopy.doBattle");
             d["callback"] = getObject("callbackName", "ncopy.doBattle");
             d["token"] = config.token;
-            string formation  = "[0]={0} [1]={"+config.heroID+"} [2]={0} [3]={0} [4]={0} [5]={0} ";
-            //config.baseID = config.copyID + config.baseID;
-            d["args"] = new object[6] { config.copyID, config.baseID, config.baseLevel, config.armyID, new CMixArray(0).ToAllDataString(), formation };
+            config.armyID = 490016;
+            //config.baseID = config.copyID * 1000 + config.baseID;
+            d["args"] = new object[6] { config.copyID, config.baseID, config.baseLevel, config.armyID, new CMixArray(0), config.formation };
             Send(d);
         }
+        public void do2ndBattle()
+        {
+            System.Threading.Thread.Sleep(1000);
+            Dictionary<string, object> d = getObject("method", "ncopy.doBattle");
+            d["callback"] = getObject("callbackName", "ncopy.doBattle");
+            d["token"] = config.token;
+            config.armyID = 490017;
+            //config.baseID = config.copyID * 1000 + config.baseID;
+            d["args"] = new object[6] { config.copyID, config.baseID, config.baseLevel, config.armyID, new CMixArray(0), config.formation };
+            Send(d);
+        }
+
+        public void do3rdBattle()
+        {
+            System.Threading.Thread.Sleep(1000);
+            Dictionary<string, object> d = getObject("method", "ncopy.doBattle");
+            d["callback"] = getObject("callbackName", "ncopy.doBattle");
+            d["token"] = config.token;
+            config.armyID = 490018;
+            //config.baseID = config.copyID * 1000 + config.baseID;
+            config.formation["4"] = 3011701;
+            d["args"] = new object[6] { config.copyID, config.baseID, config.baseLevel, config.armyID, new CMixArray(0), config.formation };
+            Send(d);
+        }
+
+
+        public void do4thBattle()
+        {
+            System.Threading.Thread.Sleep(1000);
+            Dictionary<string, object> d = getObject("method", "ncopy.doBattle");
+            d["callback"] = getObject("callbackName", "ncopy.doBattle");
+            d["token"] = config.token;
+            config.armyID = 490020;
+            //config.baseID = config.copyID * 1000 + config.baseID;
+            config.formation["4"] = 3011562;
+            config.formation["0"] = 3011561;
+            d["args"] = new object[6] { config.copyID, config.baseID, config.baseLevel, config.armyID, new CMixArray(0), config.formation };
+            Send(d);
+        }
+
+
 
         public void leaveBaseLevel()
         {
