@@ -1,0 +1,24 @@
+
+SendData:
+[method]={formation.getFormation} [callback]={[callbackName]={IFormation.getFormation} } [token]={6039896700} [args]={fixArray:   dynArray:} 
+
+ReceiveData:
+[ret]={fixArray:<[err]={ok} [callback]={[callbackName]={IFormation.getFormation} } [ret]={fixArray:<0> , <19206610> , <0> , <0> , <19206606> , <0> ,    dynArray:} > ,    dynArray:} [token]={6039896700} [time]={1414894457} 
+
+ReceiveData:
+[ret]={fixArray:<[err]={ok} [callback]={[callbackName]={ncopy.enterBaseLevel} } [ret]={ok} > ,    dynArray:} [token]={2148044000} [time]={1414894458} 
+
+SendData:
+[method]={ncopy.enterBaseLevel} [callback]={[callbackName]={ncopy.enterBaseLevel} } [token]={6039896700} [args]={fixArray:<1> , <1002> , <1> ,    dynArray:} 
+
+SendData:
+[method]={ncopy.doBattle} [callback]={[callbackName]={ncopy.doBattle} } [token]={2148044000} [args]={fixArray:<1> , <1002> , <1> , <1006> , <> ,    dynArray:} 
+
+ReceiveData:
+[ret]={fixArray:<[err]={ok} [callback]={[callbackName]={ncopy.doBattle} } [ret]={[reward]={[soul]={50} [silver]={100} [exp]={50} [item]={fixArray:   dynArray:} [hero]={fixArray:   dynArray:} } [extra_reward]={fixArray:   dynArray:} } [callbackName]={False} [cd]={1} [appraisal]={SSS} [fightRet]={eJxlU89rE0EUzmxeNt2ssa7bEnopCHqVJrW1ShGtJaYiUppaSrHWSXaSjJ3dWWd3++PYEBEUBP8AwZsXxbtSvHvooUcPnsSb/4An3+ymWhB2l/3ee997b977pmSTcovGsWCWRUo2sRTtMjAcNNH2NlMw+Pr62PFYhwUeosNvSZm2Yy4DGKzbSiaBB6RClVphmdnK6yymDnTU0AbExYhF6mPqzD/upWB1P2RIz8AaFQmDgw1CdIQBBugkZtrACLwbKQE5c5Jd284COZfh80DGwDjFQ/dR2sIIfFw9zUPTaVp+DC5ntJRzPOQMNktgDDmjPg08uRvk/yNjzf4DZLs0DBXlERVmsdlslhXbpcrTo+wxJS1CrEgmAmrliIsdHKFXZHsh1CweMx+9xGp1lzzIWbEehjHqJxFvp4aW4h4Mfr//7iRKbGlkXpiZq1Vp9dpsdZrOXZ3ptOyYUb+qiwXUZ6b74/Dtzw+f8SkmSH75S9qC7TABhUosYyoa4W0ZxbheHi0Lus9UfhQ309B9FvSpij1dEidh9WL8O3hTcEIZ8WyJ81CYYDsSD7GVJSW2T/caIbzwnHaCEkiV47KnCQ+Xgo7EfGWqfB508S9fhVy+hu80vlcgR9xomwuxIOU2DsGJUStRohhGrkJuDf22p1gUZZi4Hd7txU2co56Ygz03NRuBq/WaAlxbJVPtEK7rEy2mYqjDkWgAzAO5C7l78OzSfTCW0bvyt9465Daw0ENM+ehfE4+H9Vu6rIefDny62ENRkfG0o7pUbQav7kwIrq9QXXG8Jjo23UsN2bOmVZ2amr0Oz4N5MG9Af/KmsZBJaFErqq4/aWtG2lp/UrdmnVT7stBD6ZMn0F8ilQ5XUXwrPSIQ8gf+f/Ko} [newcopyorbase]={[pass]={True} [normal]={[1]={[uid]={194287} [copy_id]={1} [score]={3} [prized_num]={0} [refresh_atknum_time]={1414893458} [va_copy_info]={[progress]={[1001]={3} [1002]={3} [1003]={3} [1004]={1} } [defeat_num]={[1003]={98} [1002]={9} [1001]={10} [1004]={10} } [reset_num]={[1001]={0} [1002]={0} [1003]={0} [1004]={0} } } } } } [getscore]={False} [score]={3} [extra]={[mysmerchant]={fixArray:   dynArray:} } > ,    dynArray:} [token]={2148044000} [time]={1414894462} 
+
+SendData:
+[method]={ncopy.leaveBaseLevel} [callback]={[callbackName]={ncopy.leaveBaseLevel} } [token]={2148044000} [args]={fixArray:<1> , <1002> , <1> ,    dynArray:} 
+
+ReceiveData:
+[ret]={fixArray:<[err]={ok} [callback]={[callbackName]={ncopy.leaveBaseLevel} } [ret]={ok} > ,    dynArray:} [token]={5691382000} [time]={1414894481} 
