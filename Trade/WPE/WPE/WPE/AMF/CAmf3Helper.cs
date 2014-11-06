@@ -101,7 +101,7 @@ namespace WPE.AMF.AmfData
                 default:
                     break;
             }
-            throw new Exception("暂未处理的数据类型"+type);
+            //throw new Exception("暂未处理的数据类型"+type);
             return null;
         }
 

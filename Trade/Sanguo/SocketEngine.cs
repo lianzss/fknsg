@@ -47,6 +47,21 @@ namespace Sanguo
                     {
                         return;
                     }
+                    else if (co["callbackName"].ToString().Equals("re.bag.bagInfo"))
+                    {
+                       //g.startBattle();
+                        return;
+                        //return;
+                    }
+                    else if (co["callbackName"].ToString().Equals("push.mineral.rob"))
+                    {
+                        return;
+                    }
+                    else
+                    {
+                        Console.ReadLine();
+                        return;
+                    }
 
                 }
 
@@ -100,6 +115,7 @@ namespace Sanguo
 
                      case "bag.bagInfo":
                          g.getActivityConf();
+                         //g.getFormation();
                          break;
                          /*
                           there are many activies here ,but if the client can keep online ,it's ok.
@@ -132,7 +148,15 @@ namespace Sanguo
                          break;
                      case "ncopy.leaveBaseLevel":
                          //g.config = new Config();
-                         //g.enterBaseLevel();
+                         if (g.config.count < 4)
+                         {
+                             g.config.count++;
+                             g.enterBaseLevel();
+                         }
+                         else
+                         {
+                             //level 5.
+                         }
                          break;
                      default://user.getSwitchInfo
                          break;

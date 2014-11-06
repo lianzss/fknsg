@@ -114,7 +114,7 @@ namespace Auxiliary
                 }
                 catch (Exception e) {
                     MyAuxiliary.OutPut("接收连接已经断开！" + e.Message);
-                    Stop();
+                    //Stop();
                 }
             }
         }

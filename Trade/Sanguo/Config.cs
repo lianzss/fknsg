@@ -35,24 +35,25 @@ namespace Sanguo
 
 
         public Int32 copyID = 1;
-        public Int32 baseID = 1;
+        public Int32 baseID = 1001;
         public Int32 baseLevel = 0;
         public Int32 armyID = 1006;
 
 
         public Int32 battlecopyID = 1;
-        public Int32 battlebaseID = 2;
+        public Int32 battlebaseID = 1001;
         public Int32 battlebaseLevel = 1;
-        public Int32 battlearmyID = 1006;
+        public Int32 battlearmyID = 1003;
+
 
         public Int32 heroID = 0;
 
-        public Int32 battleFlag = 0;   //if set the battle Flag to 4 ,it means the role is finish the 1st battle.
+        public Int32 battleFlag = 4;   //if set the battle Flag to 4 ,it means the role is finish the 1st battle.
 
         public string filePath = "file.txt";
         public Dictionary<string, object> formation;
 
-        public Int32 count = 0;
+        public Int32 count = 4;
 
 
     }

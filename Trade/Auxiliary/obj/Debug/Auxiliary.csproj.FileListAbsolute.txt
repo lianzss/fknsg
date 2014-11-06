@@ -18,3 +18,12 @@ G:\lua_proj\Trade\Auxiliary\obj\Debug\ResolveAssemblyReference.cache
 G:\lua_proj\Trade\Auxiliary\obj\Debug\Auxiliary.dll
 G:\lua_proj\Trade\Auxiliary\obj\Debug\Auxiliary.pdb
 G:\lua_proj\Trade\Auxiliary\bin\Debug\WPE.pdb
+G:\github\fknsg\Trade\Auxiliary\bin\Debug\Auxiliary.dll
+G:\github\fknsg\Trade\Auxiliary\bin\Debug\Auxiliary.pdb
+G:\github\fknsg\Trade\Auxiliary\bin\Debug\WPE.exe
+G:\github\fknsg\Trade\Auxiliary\bin\Debug\SharpPcap.dll
+G:\github\fknsg\Trade\Auxiliary\bin\Debug\PacketDotNet.dll
+G:\github\fknsg\Trade\Auxiliary\obj\Debug\ResolveAssemblyReference.cache
+G:\github\fknsg\Trade\Auxiliary\obj\Debug\Auxiliary.dll
+G:\github\fknsg\Trade\Auxiliary\obj\Debug\Auxiliary.pdb
+G:\github\fknsg\Trade\Auxiliary\bin\Debug\WPE.pdb

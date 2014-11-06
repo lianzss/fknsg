@@ -153,7 +153,15 @@ namespace WPE
                 if (ss[i].IndexOf(":") > 0)
                 {
                     string[] sss = ss[i].Split(':');
-                    header.Add(sss[0].Trim(), sss[1].Trim());
+                    try
+                    {
+
+                        header.Add(sss[0].Trim(), sss[1].Trim());
+                    }
+                    catch (ArgumentException e)
+                    {
+                        Console.Write("same key!");
+                    }
                 }
             }
             if (IsSend)

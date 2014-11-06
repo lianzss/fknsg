@@ -24,7 +24,7 @@ namespace Sanguo
             Console.WriteLine("hello");
             Game game = new Game();
 
-            game.Register();
+           // game.Register();
             game.Start();
         }
 
@@ -103,8 +103,8 @@ namespace Sanguo
 
         public void Start()
         {
-            //config.username = "H02C58Uc";
-            //config.pwd = "qdaitA";
+            config.username = "lianzs";
+            config.pwd = "4822012";
             //get the serverlist
             HttpClient wc = new HttpClient();
             string getServersUrl = "http://mapifknsg.zuiyouxi.com/phone/serverlistnotice/?&pl=Mjbaidupinzhuan&gn=sanguo&os=android&other_pl=zyxphone";
@@ -212,8 +212,8 @@ namespace Sanguo
             Dictionary<string, object> d = getObject("method", "ncopy.enterBaseLevel");
             d["callback"] = getObject("callbackName", "ncopy.enterBaseLevel");
             d["token"] = config.token;
-            config.battlebaseID = config.battlecopyID * 1000 + config.battlebaseID;
-            config.baseID = config.copyID * 1000 + config.baseID;
+            //config.battlebaseID = config.battlecopyID * 1000 + config.battlebaseID;
+            //config.baseID = config.copyID * 1000 + config.baseID;
             if (config.battleFlag < 4)
             {
                 d["args"] = new object[3] { config.copyID, config.baseID, config.baseLevel };
@@ -260,7 +260,10 @@ namespace Sanguo
             Dictionary<string, object> d = getObject("method", "ncopy.doBattle");
             d["callback"] = getObject("callbackName", "ncopy.doBattle");
             d["token"] = config.token;
+            //config.formation["4"] = 3011562;
+            //config.formation["0"] = 3011561;
             d["args"] = new object[5] { config.battlecopyID, config.battlebaseID, config.battlebaseLevel, config.battlearmyID, new Dictionary<string, object>() };
+           // d["args"] = new object[5] { config.battlecopyID, config.battlebaseID, config.battlebaseLevel, config.battlearmyID, config.formation };
             Send(d);
         }
 
@@ -420,7 +423,7 @@ namespace Sanguo
             Dictionary<string, object> d = getObject("method", "activity.getActivityConf");
             d["callback"] = getObject("callbackName", "activity.getActivityConf");
             d["token"] = config.token;
-            d["args"] = new object[0];
+            d["args"] = new object[1] {1415183827}; // this is get from the config version..
             Send(d);
         }
 

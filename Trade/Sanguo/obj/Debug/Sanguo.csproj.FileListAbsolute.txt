@@ -25,3 +25,14 @@ G:\lua_proj\Trade\Sanguo\bin\Debug\WPE.pdb
 G:\lua_proj\Trade\Sanguo\bin\Debug\Newtonsoft.Json.dll
 G:\lua_proj\Trade\Sanguo\bin\Debug\Newtonsoft.Json.pdb
 G:\lua_proj\Trade\Sanguo\bin\Debug\Newtonsoft.Json.xml
+G:\github\fknsg\Trade\Sanguo\obj\Debug\Sanguo.exe
+G:\github\fknsg\Trade\Sanguo\obj\Debug\Sanguo.pdb
+G:\github\fknsg\Trade\Sanguo\bin\Debug\Sanguo.exe
+G:\github\fknsg\Trade\Sanguo\bin\Debug\Sanguo.pdb
+G:\github\fknsg\Trade\Sanguo\bin\Debug\Auxiliary.dll
+G:\github\fknsg\Trade\Sanguo\bin\Debug\WPE.exe
+G:\github\fknsg\Trade\Sanguo\bin\Debug\SharpPcap.dll
+G:\github\fknsg\Trade\Sanguo\bin\Debug\PacketDotNet.dll
+G:\github\fknsg\Trade\Sanguo\bin\Debug\Auxiliary.pdb
+G:\github\fknsg\Trade\Sanguo\bin\Debug\WPE.pdb
+G:\github\fknsg\Trade\Sanguo\obj\Debug\ResolveAssemblyReference.cache
