@@ -65,7 +65,7 @@
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(244, 21);
             this.textBox2.TabIndex = 1;
-            this.textBox2.Text = "ip and tcp and greater 1 and host 124.202.156.5";
+            this.textBox2.Text = "ip and tcp and greater 1 and host 124.202.133.87";
             // 
             // label1
             // 

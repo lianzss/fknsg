@@ -24,7 +24,7 @@ namespace Sanguo
             Console.WriteLine("hello");
             Game game = new Game();
 
-           // game.Register();
+            game.Register();
             game.Start();
         }
 
@@ -103,8 +103,8 @@ namespace Sanguo
 
         public void Start()
         {
-            config.username = "lianzs";
-            config.pwd = "4822012";
+           // config.username = "lianzs";
+           // config.pwd = "4822012";
             //get the serverlist
             HttpClient wc = new HttpClient();
             string getServersUrl = "http://mapifknsg.zuiyouxi.com/phone/serverlistnotice/?&pl=Mjbaidupinzhuan&gn=sanguo&os=android&other_pl=zyxphone";
@@ -120,7 +120,7 @@ namespace Sanguo
 
 
             //check the version ,return json data ,the program can ignore it.
-            string checkVersionUrl = "http://mapifknsg.zuiyouxi.com/phone/get3dVersion?&packageVersion=3.0.3&scriptVersion=2.6.2&pl=Mjbaidupinzhuan&gn=sanguo&os=android&extend=sysName_TODO,sysVersion_4.3,deviceModel_LT29i";
+            string checkVersionUrl = "http://mapifknsg.zuiyouxi.com/phone/get3dVersion?&packageVersion=3.0.3&scriptVersion=2.6.5&pl=Mjbaidupinzhuan&gn=sanguo&os=android&extend=sysName_TODO,sysVersion_4.3,deviceModel_LT29i";
             string checkVersionresult = System.Text.Encoding.UTF8.GetString(wc.DownloadData(checkVersionUrl));
             O(checkVersionresult);
             Dictionary<string, string> checkVersionjson = JsonConvert.DeserializeObject<Dictionary<string,string>>(checkVersionresult);
@@ -207,46 +207,107 @@ namespace Sanguo
             config.formation = formation;
         }
 
-        public void enterBaseLevel()
+        public void startBattle()
+        {
+            if (config.battleFlag < 4)
+            {
+                start1stBattle();
+            }
+            else if (4 <= config.battleFlag && config.battleFlag < 8)
+            {
+                 start2ndBattle();
+            }
+            else
+            {
+
+            }
+
+        }
+
+        public void enter1stBaseLevel()
         {
             Dictionary<string, object> d = getObject("method", "ncopy.enterBaseLevel");
             d["callback"] = getObject("callbackName", "ncopy.enterBaseLevel");
             d["token"] = config.token;
             //config.battlebaseID = config.battlecopyID * 1000 + config.battlebaseID;
             //config.baseID = config.copyID * 1000 + config.baseID;
-            if (config.battleFlag < 4)
-            {
-                d["args"] = new object[3] { config.copyID, config.baseID, config.baseLevel };
-            }
-            else
-            {
-                d["args"] = new object[3] { config.battlecopyID, config.battlebaseID, config.battlebaseLevel };
-            }
+
+            config.baseID = 1001;
+            config.copyID = 1;
+            config.baseLevel = 0;
+            //config.armyID = 1006;
+            d["args"] = new object[3] { config.copyID, config.baseID, config.baseLevel };
+
             Send(d);
         }
 
-       public void startBattle()
+        public void enter2ndBaseLevel()
+        {
+            Dictionary<string, object> d = getObject("method", "ncopy.enterBaseLevel");
+            d["callback"] = getObject("callbackName", "ncopy.enterBaseLevel");
+            d["token"] = config.token;
+            //config.battlebaseID = config.battlecopyID * 1000 + config.battlebaseID;
+            //config.baseID = config.copyID * 1000 + config.baseID;
+
+            config.baseID = 1002;
+            config.copyID = 1;
+            config.baseLevel = 0;
+
+            d["args"] = new object[3] { config.copyID, config.baseID, config.baseLevel };
+
+            Send(d);
+        }
+
+
+       public void start1stBattle()
        {
            switch (config.battleFlag)
            {
                case 0:
-                   do1stBattle();
+                   do1st_1stBattle();
                    config.battleFlag++;
                    break;
                case 1:
-                   do2ndBattle();
+                   do1st_2ndBattle();
                    config.battleFlag++;
                    break;
                case 2:
-                   do3rdBattle();
+                   do1st_3rdBattle();
                    config.battleFlag++;
                    break;
                case 3:
-                   do4thBattle();
+                   do1st_4thBattle();
                    config.battleFlag++;
                    break;
                default:
-                   doBattle();
+                   leaveBaseLevel();                 
+                   break;
+           }
+       }
+
+
+       public void start2ndBattle()
+       {
+           switch (config.battleFlag)
+           {
+               case 4:
+                   do2nd_1stBattle();
+                   config.battleFlag++;
+                   break;
+               case 5:
+                   do2nd_2ndBattle();
+                   config.battleFlag++;
+                   break;
+               case 6:
+                   do2nd_3rdBattle();
+                   config.battleFlag++;
+                   break;
+               case 7:
+                   do2nd_4thBattle();
+                   config.battleFlag++;
+                   break;
+               default:
+                   //doBattle();
                    break;
            }
        }
@@ -266,8 +327,8 @@ namespace Sanguo
            // d["args"] = new object[5] { config.battlecopyID, config.battlebaseID, config.battlebaseLevel, config.battlearmyID, config.formation };
             Send(d);
         }
-
-        public void do1stBattle()
+       //1st base
+        public void do1st_1stBattle()
         {
 
             Dictionary<string, object> d = getObject("method", "ncopy.doBattle");
@@ -278,7 +339,7 @@ namespace Sanguo
             d["args"] = new object[6] { config.copyID, config.baseID, config.baseLevel, config.armyID, new CMixArray(0), config.formation };
             Send(d);
         }
-        public void do2ndBattle()
+        public void do1st_2ndBattle()
         {
             System.Threading.Thread.Sleep(1000);
             Dictionary<string, object> d = getObject("method", "ncopy.doBattle");
@@ -290,7 +351,7 @@ namespace Sanguo
             Send(d);
         }
 
-        public void do3rdBattle()
+        public void do1st_3rdBattle()
         {
             System.Threading.Thread.Sleep(1000);
             Dictionary<string, object> d = getObject("method", "ncopy.doBattle");
@@ -304,7 +365,7 @@ namespace Sanguo
         }
 
 
-        public void do4thBattle()
+        public void do1st_4thBattle()
         {
             System.Threading.Thread.Sleep(1000);
             Dictionary<string, object> d = getObject("method", "ncopy.doBattle");
@@ -318,6 +379,61 @@ namespace Sanguo
             Send(d);
         }
 
+
+       //2nd base
+        public void do2nd_1stBattle()
+        {
+            System.Threading.Thread.Sleep(1000);
+            Dictionary<string, object> d = getObject("method", "ncopy.doBattle");
+            d["callback"] = getObject("callbackName", "ncopy.doBattle");
+            d["token"] = config.token;
+            config.armyID = 490021;
+
+            config.formation["4"] = 3011721;
+            //config.baseID = config.copyID * 1000 + config.baseID;
+            d["args"] = new object[6] { config.copyID, config.baseID, config.baseLevel, config.armyID, new CMixArray(0), config.formation };
+            Send(d);
+        }
+        public void do2nd_2ndBattle()
+        {
+            System.Threading.Thread.Sleep(1000);
+            Dictionary<string, object> d = getObject("method", "ncopy.doBattle");
+            d["callback"] = getObject("callbackName", "ncopy.doBattle");
+            d["token"] = config.token;
+            config.armyID = 490022;
+
+            config.formation["4"] = 3011731;
+            //config.baseID = config.copyID * 1000 + config.baseID;
+            d["args"] = new object[6] { config.copyID, config.baseID, config.baseLevel, config.armyID, new CMixArray(0), config.formation };
+            Send(d);
+        }
+        public void do2nd_3rdBattle()
+        {
+            System.Threading.Thread.Sleep(1000);
+            Dictionary<string, object> d = getObject("method", "ncopy.doBattle");
+            d["callback"] = getObject("callbackName", "ncopy.doBattle");
+            d["token"] = config.token;
+            config.armyID = 490023;
+
+            config.formation["4"] = 3011751;
+            //config.baseID = config.copyID * 1000 + config.baseID;
+            d["args"] = new object[6] { config.copyID, config.baseID, config.baseLevel, config.armyID, new CMixArray(0), config.formation };
+            Send(d);
+        }
+        public void do2nd_4thBattle()
+        {
+            System.Threading.Thread.Sleep(1000);
+            Dictionary<string, object> d = getObject("method", "ncopy.doBattle");
+            d["callback"] = getObject("callbackName", "ncopy.doBattle");
+            d["token"] = config.token;
+            config.armyID = 490024;
+
+            config.formation["4"] = 3011572;
+            config.formation["0"] = 3011571;
+            //config.baseID = config.copyID * 1000 + config.baseID;
+            d["args"] = new object[6] { config.copyID, config.baseID, config.baseLevel, config.armyID, new CMixArray(0), config.formation };
+            Send(d);
+        }
 
 
         public void leaveBaseLevel()
@@ -423,7 +539,7 @@ namespace Sanguo
             Dictionary<string, object> d = getObject("method", "activity.getActivityConf");
             d["callback"] = getObject("callbackName", "activity.getActivityConf");
             d["token"] = config.token;
-            d["args"] = new object[1] {1415183827}; // this is get from the config version..
+            d["args"] = new object[1] { 1415609344 }; // this is get from the config version..
             Send(d);
         }
 

@@ -20,17 +20,32 @@ namespace Sanguo
 
         public override  bool ParseStream(NetworkStream ns)
         {
-            if (!ns.DataAvailable)
-                return false;
-            int len =( ns.ReadByte() << 24) + (ns.ReadByte() << 16) +( ns.ReadByte() << 8 )+ ns.ReadByte();
-            byte[] data = new byte[len];
-            byte[] head = new byte[4];
-            ns.Read(head, 0, 4);
-            ns.Read(data, 0, len);
-            MyAuxiliary.OutPut(Inspector.Inspect(data));
-            CNameObjDict co = ((CNameObjDict)CAmf3Helper.GetObject(data));
-            MyAuxiliary.OutPut(co.ToString());
-            ParseData(co);
+            try
+            {
+
+                if (!ns.DataAvailable)
+                    return false;
+                int len = (ns.ReadByte() << 24) + (ns.ReadByte() << 16) + (ns.ReadByte() << 8) + ns.ReadByte();
+                byte[] data = new byte[len];
+                byte[] head = new byte[4];
+                ns.Read(head, 0, 4);
+                ns.Read(data, 0, len);
+                MyAuxiliary.OutPut(Inspector.Inspect(data));
+                if (data[0] == 10 && data[1] == 11 && data[2] == 1 && data[3] == 7)
+                {
+                    CNameObjDict co = ((CNameObjDict)CAmf3Helper.GetObject(data));
+                    MyAuxiliary.OutPut(co.ToString());
+                    ParseData(co);
+                }
+                else
+                {
+                    return true;
+                }
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.ToString());
+            }
             return true;
         }
 
@@ -126,7 +141,14 @@ namespace Sanguo
                          break;
                      case "IFormation.getFormation":
                          g.parseFormation(co);
-                         g.enterBaseLevel();                         
+                         if (g.config.battleFlag < 4)
+                         {
+                             g.enter1stBaseLevel();
+                         }
+                         else if (g.config.battleFlag < 8)
+                         {
+                             g.enter2ndBaseLevel();
+                         }
                          //g.SetHerorID(GetHeroID(co));
                          break;
                      case "ncopy.enterBaseLevel":
@@ -137,7 +159,7 @@ namespace Sanguo
 
                          break;
                      case "ncopy.doBattle":
-                         if (g.config.battleFlag < 4)
+                         if (g.config.battleFlag < 8)
                          {
                              g.startBattle();
                          }
@@ -147,16 +169,7 @@ namespace Sanguo
                          }                         
                          break;
                      case "ncopy.leaveBaseLevel":
-                         //g.config = new Config();
-                         if (g.config.count < 4)
-                         {
-                             g.config.count++;
-                             g.enterBaseLevel();
-                         }
-                         else
-                         {
-                             //level 5.
-                         }
+                         int a = 1;
                          break;
                      default://user.getSwitchInfo
                          break;

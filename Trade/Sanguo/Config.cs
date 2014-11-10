@@ -48,7 +48,7 @@ namespace Sanguo
 
         public Int32 heroID = 0;
 
-        public Int32 battleFlag = 4;   //if set the battle Flag to 4 ,it means the role is finish the 1st battle.
+        public Int32 battleFlag = 0;   //if set the battle Flag to 4 ,it means the role is finish the 1st battle.
 
         public string filePath = "file.txt";
         public Dictionary<string, object> formation;
