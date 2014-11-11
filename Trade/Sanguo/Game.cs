@@ -120,7 +120,7 @@ namespace Sanguo
 
 
             //check the version ,return json data ,the program can ignore it.
-            string checkVersionUrl = "http://mapifknsg.zuiyouxi.com/phone/get3dVersion?&packageVersion=3.0.3&scriptVersion=2.6.5&pl=Mjbaidupinzhuan&gn=sanguo&os=android&extend=sysName_TODO,sysVersion_4.3,deviceModel_LT29i";
+            string checkVersionUrl = "http://mapifknsg.zuiyouxi.com/phone/get3dVersion?&packageVersion=3.0.3&scriptVersion=2.6.6&pl=Mjbaidupinzhuan&gn=sanguo&os=android&extend=sysName_TODO,sysVersion_4.3,deviceModel_LT29i";
             string checkVersionresult = System.Text.Encoding.UTF8.GetString(wc.DownloadData(checkVersionUrl));
             O(checkVersionresult);
             Dictionary<string, string> checkVersionjson = JsonConvert.DeserializeObject<Dictionary<string,string>>(checkVersionresult);
@@ -438,6 +438,7 @@ namespace Sanguo
 
         public void leaveBaseLevel()
         {
+            System.Threading.Thread.Sleep(3000);
             Dictionary<string, object> d = getObject("method", "ncopy.leaveBaseLevel");
             d["callback"] = getObject("callbackName", "ncopy.leaveBaseLevel");
             d["token"] = config.token;

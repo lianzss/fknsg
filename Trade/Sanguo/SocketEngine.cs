@@ -74,7 +74,7 @@ namespace Sanguo
                     }
                     else
                     {
-                        Console.ReadLine();
+                        //Console.ReadLine();
                         return;
                     }
 
@@ -159,7 +159,7 @@ namespace Sanguo
 
                          break;
                      case "ncopy.doBattle":
-                         if (g.config.battleFlag < 8)
+                         if (g.config.battleFlag !=4 && g.config.battleFlag !=8 )
                          {
                              g.startBattle();
                          }
@@ -169,7 +169,7 @@ namespace Sanguo
                          }                         
                          break;
                      case "ncopy.leaveBaseLevel":
-                         int a = 1;
+                         g.getFormation();
                          break;
                      default://user.getSwitchInfo
                          break;
